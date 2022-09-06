@@ -1,77 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    
-    <title>TOUR BR</title>
-  <link rel ="stylesheet" href="./css/estilo.css" type="text/css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  
+  <meta charset="UTF-8">
+
+  <title>TOUR BR</title>
+  <link rel="stylesheet" href="./css/estilo.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
+
 <body>
- 
+
   <!--menu-->
-  <div class="container-fluid">
-    <div class="coll-sm">
-  <ul>
-    <li><img width= "90px" src="./imagens/LG.png" alt= "Tour BR"></li>
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./destinos.html">Destinos</a></li>
-    <li><a href="./promoções.html">Promoções</a> </li>
-    <li><a href="./contato.html">Contato</a></li>
-    <li><a href="./login.html">Login</a></li>
-  </ul>
-  </div>
-  <!--fim menu-->
-  <h4>Encontre aqui sua próxima viagem:</h4>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:blue;">
+    <a class="navbar-brand" href="./index.html"><img src="./imagens/LG.png" width="78px"
+        class="d-inline-block align-top"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
 
-<div class="container-fluid">
-    <div class="coll-sm">
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="inputGroupSelect01">Origem:</label>
-    </div>
-    <select class="custom-select" id="inputGroupSelect01">
-      <option selected>Selecione</option>
-      <option value="1">São Paulo-SP</option>
-      <option value="2">Niterói-RJ</option>
-      <option value="3">Recife-PE</option>
-    </select>
-  </div>
-  <br>
-  <div class="input-group mb-4">
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="inputGroupSelect01">Destino:</label>
-    </div>
-    <select class="custom-select" id="inputGroupSelect01">
-      <option selected>Selecione</option>
-      <option value="1">Ouro Preto-MG</option>
-      <option value="2">Bonito-MS</option>
-      <option value="3">Porto de Galinhas-PE</option>
-      <option value="4">São Luís do Maranhão</option>
-    </select>
-  </div>
-  <br>
-  <form>
-    <div class="form-row">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Data da Viagem">
+        <a class="nav-item nav-link active" style="color:rgb(221, 221, 4)" href="./index.html"><strong>Home</strong></a>
+        </li>
+        <a class="nav-item nav-link" href="./destinos.html">Destinos</a></li>
+        <a class="nav-item nav-link" href="./promoções.html">Promoções</a> </li>
+        <a class="nav-item nav-link" href="./contato.html">Contato</a></li>
+        <a class="nav-item nav-link" href="./login.html">Login</a></li>
       </div>
-    </form>
     </div>
-    <br><br><br>    
-  <button type="submit" class="btn btn-success btn-block">Buscar</button>
+  </nav>
+  <!--fim menu-->
+  <br><br>
+  <div class="container-fluid" style="background-color:blue;">
+  </div>
+  <div class="container" style="background-color:blue;">
+    <br><br>
+    <h4 style="color:rgb(93, 199, 93)"><img src="./imagens/icons8-airplane-40.png"><strong>Encontre aqui sua próxima
+        viagem:</strong></h4>
+    <br>
+    <!--<div class="coll-sm">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Origem:</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Selecione</option>
+          <option value="1">São Paulo-SP</option>
+          <option value="2">Niterói-RJ</option>
+          <option value="3">Recife-PE</option>
+        </select>
+      </div>
+      <br>
+      <div class="input-group mb-4">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Destino:</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Selecione</option>
+          <option value="1">Ouro Preto-MG</option>
+          <option value="2">Bonito-MS</option>
+          <option value="3">Porto de Galinhas-PE</option>
+          <option value="4">São Luís do Maranhão</option>
+        </select>
+      </div>
+      <br>
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <h6 style="color:bisque;">Data da Viagem:
+              <input type="datetime-local" style="border-color:rgb(42, 207, 42);">
+            </h6>
+          </div>
+      </form>
+    </div>-->
+    <form>
+      <div class="form-row">
+        <div class="col-6">
+          <input type="text" class="form-control" placeholder="Origem">
+        </div>
+        <div class="col-6">
+          <input type="text" class="form-control" placeholder="Destino">
+        </div>
+        </div>
+        </form>
+        <br><br>
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <h6 style="color:bisque;">Data da Viagem:
+              <input type="datetime-local" style="border-color:rgb(42, 207, 42);">
+            </h6>
+          </div>
+      </form>
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-success btn">Buscar</button>
+    <br><br>
+  </div>
+  </div>
+  <br><br>
 
-    
-    
-       
-    
 
-  <div class="footer"><P><strong>&copy; Tour BR</strong></p></div>
-    
-    <!--JS-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+  <!--JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

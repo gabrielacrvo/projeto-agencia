@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    
-    <title>Contato - TOUR BR</title>
-    <link rel ="stylesheet" href="./css/estilo.css" type="text/css" >
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-  
+  <meta charset="UTF-8">
+
+  <title>Contato - TOUR BR</title>
+  <link rel="stylesheet" href="./css/estilo.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
 </head>
+
 <body>
   <!--menu-->
-  <div class="container-fluid">
-    <div class="coll-sm">
-  <ul>
-    <li><img width= "90px" src="./imagens/LG.png" alt= "Tour BR"></li>
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./destinos.html">Destinos</a></li>
-    <li><a href="./promoções.html">Promoções</a> </li>
-    <li><a href="./contato.html">Contato</a></li>
-    <li><a href="./login.html">Login</a></li>
-  </ul>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:blue;">
+    <a class="navbar-brand" href="./index.html"><img src="./imagens/LG.png" width="78px"
+        class="d-inline-block align-top"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+
+        <a class="nav-item nav-link" href="./index.html">Home</a>
+        <a class="nav-item nav-link" href="./destinos.html">Destinos</a>
+        <a class="nav-item nav-link" href="./promoções.html">Promoções</a>
+        <a class="nav-item nav-link active" style="color:rgb(221, 221, 4)"
+          href="./contato.html"><strong>Contato</strong></a>
+        <a class="nav-item nav-link" href="./login.html">Login</a>
+      </div>
+    </div>
+  </nav>
   <!--fim menu-->
-  <h4>Fale Conosco</h4>
-  <hr>
-  <div class="container-fluid">
+  <br><br>
+  <div class="container" style="background-color:rgb(38, 185, 33);">
+    <br>
+    <h3 style="color:rgb(42, 42, 228)"><img src="./imagens/icons8-mail-48.png"><strong>Fale Conosco</strong></h3>
+    <br>
     <div class="coll-sm">
-  <form>
-    <div class="container">
-    <div class="row">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Nome">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Sobrenome">
-      </div>
+      <form>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nome">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Sobrenome">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Seu email">
+            <small id="emailHelp" class="form-text text muted">
+              Não compartilhamos seu email!</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Escreva aqui sua mensagem:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <br><br>
+            <button type="submit" class="btn btn-warning btn">Enviar</button>
+            <br><br>
+          </div>
+        </div>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Endereço de email</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-      <small id="emailHelp" class="form-text text-muted">Não Compartilhamos seu email!</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Escreva aqui sua mensagem:</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      <br><br>
-      <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-    </div>
-    </div>
-    </form>
+  </div>
+  </br></br>
 
 
 
 
-    <div class="footer"><P><strong>&copy; Tour BR</strong></p></div>
+
   
- <!--JS-->
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+
+  <!--JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

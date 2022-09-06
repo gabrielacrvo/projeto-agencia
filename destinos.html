@@ -1,91 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    
-    <title>Destinos - TOUR BR</title>
-    <link rel ="stylesheet" href="./css/estilo.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style>
-      div.gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 180px;
-      }
-      
-      div.gallery:hover {
-        border: 1px solid #777;
-      }
-      
-      div.gallery img {
-        width: 100%;
-        height: auto;
-      }
-      
-      div.desc {
-        padding: 15px;
-        text-align: center;
-      }
-      </style>
-  
+  <meta charset="UTF-8">
+
+  <title>Destinos - TOUR BR</title>
+  <link rel="stylesheet" href="./css/estilo.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+    }
+
+    div.gallery {
+      margin: 10px;
+      border: 1px solid blue;
+      float: left;
+      width: 220px;
+      height: 240px;
+      background-color: rgb(255, 255, 37);
+    }
+
+    div.gallery:hover {
+      border: 1px solid rgb(41, 202, 41);
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      color: rgb(0, 0, 192);
+    }
+  </style>
+
 </head>
+
 <body>
   <!--menu-->
-  <div class="container-fluid">
-    <div class="coll-sm">
-  <ul>
-    <li><img width= "90px" src="./imagens/LG.png" alt= "Tour BR"></li>
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./destinos.html">Destinos</a></li>
-    <li><a href="./promoções.html">Promoções</a> </li>
-    <li><a href="./contato.html">Contato</a></li>
-    <li><a href="./login.html">Login</a></li>
-  </ul>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:blue;">
+    <a class="navbar-brand" href="./index.html"><img src="./imagens/LG.png" width="78px"
+        class="d-inline-block align-top"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+
+        <a class="nav-item nav-link" href="./index.html">Home</a>
+        <a class="nav-item nav-link active" style="color:rgb(221, 221, 4)"
+          href="./destinos.html"><strong>Destinos</strong></a>
+        <a class="nav-item nav-link" href="./promoções.html">Promoções</a>
+        <a class="nav-item nav-link" href="./contato.html">Contato</a>
+        <a class="nav-item nav-link" href="./login.html">Login</a>
+      </div>
+    </div>
+  </nav>
   <!--fim menu-->
-  
-  <h2>Destinos</h2>
-  <hr>
-  <div class="container-fluid">
+  <div class="container-fluid" style="background-color:blue;">
+    <h2 style="color:rgb(93, 199, 93)"><img src="./imagens/icons8-map-48.png"> <strong>Destinos</strong></h2>
+  </div>
+  <div class="container">
     <div class="coll-sm">
 
-  <div class="gallery">
-    <a target="_blank" href="sl.jpg">
-      <img src="./imagens/sl.jpg" alt="São Luís do Maranhão" width="600" height="400">
-    </a>
-    <div class="desc">São Luís do Maranhão</div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="portg.jpg">
-      <img src="./imagens/portg.jpg" alt="Porto de Galinhas" width="600" height="400">
-    </a>
-    <div class="desc">Porto de Galinhas-PE</div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="ourpr.jpg">
-      <img src="./imagens/ourpr.jpg" alt="Ouro Preto" width="600" height="400">
-    </a>
-    <div class="desc">Ouro Preto-MG</div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="bonitoms.jpg">
-      <img src="./imagens/bonitoms.jpg" alt="Bonito-MS" width="600" height="400">
-    </a>
-    <div class="desc">Bonito-MS</div>
-  </div>
-  </div>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/belem-do-para.webp" alt="Belém-PA" width="600" height="400">
+        </a>
+        <div class="desc">Belém-PA</div>
+      </div>
 
-  <div class="footer"><P><strong>&copy; Tour BR</strong></p></div>
-  
-  
-  
-    <!--JS-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/jalap.svg" alt="Jalapão-TO" width="600" height="400">
+        </a>
+        <div class="desc">Jalapão-TO</div>
+      </div>
+
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/macap.svg" alt="Macapá-AP" width="600" height="400">
+        </a>
+        <div class="desc">Macapá-AP</div>
+      </div>
+
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/fenoronha.svg" alt="Fernado de Noronha-PE" width="600" height="400">
+        </a>
+        <div class="desc">Fernado de Noronha-PE</div>
+      </div>
+
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/novoairao.svg" alt="Novo Airão-AM" width="600" height="400">
+        </a>
+        <div class="desc">Novo Airão-AM</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/sluis.svg" alt="São Luís do Maranhão" width="600" height="400">
+        </a>
+        <div class="desc">São Luís do Maranhão</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/portog.svg" alt="Porto de Galinhas" width="600" height="400">
+        </a>
+        <div class="desc">Porto de Galinhas-PE</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/ouropt.svg" alt="Ouro Preto" width="600" height="400">
+        </a>
+        <div class="desc">Ouro Preto-MG</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/Gramado-RS-Visit-Brasil-3-min-3.webp" alt="Gramado-RS" width="600" height="400">
+        </a>
+        <div class="desc">Gramado-RS</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/fozig.svg" alt="Ouro Preto" width="600" height="400">
+        </a>
+        <div class="desc">Foz do Iguaçu-PR</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/valedoitajai.webp" alt="Vale do Itajaí-SC" width="600" height="400">
+        </a>
+        <div class="desc">Vale do Itajaí-SC</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/bonitomss.svg" alt="Bonito-MS" width="600" height="400">
+        </a>
+        <div class="desc">Bonito-MS</div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
