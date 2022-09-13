@@ -9,6 +9,37 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+  <style>
+    .container-flex {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+    }
+
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 280px;
+      height: 300px;
+      background-color: rgb(0, 0, 202);
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      color: yellow;
+    }
+  </style>
 </head>
 
 <body>
@@ -42,68 +73,72 @@
     <h4 style="color:rgb(93, 199, 93)"><img src="./imagens/icons8-airplane-40.png"><strong>Encontre aqui sua próxima
         viagem:</strong></h4>
     <br>
-    <!--<div class="coll-sm">
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Origem:</label>
-        </div>
-        <select class="custom-select" id="inputGroupSelect01">
-          <option selected>Selecione</option>
-          <option value="1">São Paulo-SP</option>
-          <option value="2">Niterói-RJ</option>
-          <option value="3">Recife-PE</option>
-        </select>
-      </div>
-      <br>
-      <div class="input-group mb-4">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Destino:</label>
-        </div>
-        <select class="custom-select" id="inputGroupSelect01">
-          <option selected>Selecione</option>
-          <option value="1">Ouro Preto-MG</option>
-          <option value="2">Bonito-MS</option>
-          <option value="3">Porto de Galinhas-PE</option>
-          <option value="4">São Luís do Maranhão</option>
-        </select>
-      </div>
-      <br>
-      <form>
-        <div class="form-row">
-          <div class="col">
-            <h6 style="color:bisque;">Data da Viagem:
-              <input type="datetime-local" style="border-color:rgb(42, 207, 42);">
-            </h6>
-          </div>
-      </form>
-    </div>-->
+    
     <form>
       <div class="form-row">
         <div class="col-6">
           <input type="text" class="form-control" placeholder="Origem">
         </div>
+        <br>
         <div class="col-6">
           <input type="text" class="form-control" placeholder="Destino">
         </div>
+      </div>
+    </form>
+    <br>
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <h6 style="color:bisque;">Data da Viagem:
+            <input type="date" style="border-color:rgb(42, 207, 42);">
+          </h6>
         </div>
-        </form>
-        <br><br>
-      <form>
-        <div class="form-row">
-          <div class="col">
-            <h6 style="color:bisque;">Data da Viagem:
-              <input type="datetime-local" style="border-color:rgb(42, 207, 42);">
-            </h6>
-          </div>
-      </form>
-    </div>
-    <br><br>
-    <button type="submit" class="btn btn-success btn">Buscar</button>
-    <br><br>
+    </form>
+  </div>
+  <br><br>
+  <button type="submit" class="btn btn-success btn">Buscar</button>
+  <br><br>
   </div>
   </div>
   <br><br>
 
+  <div class="container-flex">
+    <div class="coll-sm">
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/sluis.svg" alt="São Luís do Maranhão" width="600" height="400">
+        </a>
+        <div class="desc">
+          <p><strong>Promoção: R$ 710,00</p></strong>São Luís do Maranhão
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/portog.svg" alt="Porto de Galinhas" width="600" height="400">
+        </a>
+        <div class="desc">
+          <p><strong>Promoção: R$ 815,00</p></strong>Porto de Galinhas-PE
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/fozig.svg" alt="Foz do Iguaçu-PR" width="600" height="400">
+        </a>
+        <div class="desc">
+          <p><strong>Promoção: R$ 784,98</p></strong>Foz do Iguaçu-PR
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./imagens/bonitomss.svg" alt="Bonito-MS" width="600" height="400">
+        </a>
+        <div class="desc">
+          <p><strong>Promoção: R$ 784,98</p></strong>Bonito-MS
+        </div>
+      </div>
 
 
 
@@ -112,16 +147,21 @@
 
 
 
-  <!--JS-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+
+
+
+
+
+      <!--JS-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
